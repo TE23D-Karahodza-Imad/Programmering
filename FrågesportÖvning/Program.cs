@@ -36,11 +36,19 @@ else
 Console.WriteLine("Okay you are advancing slowly.");
 Console.WriteLine("What country does Liverpool come from?");
 Console.WriteLine("a) Hungary b) United States c)United Kingdom d) Australia");
+string answer3 = Console.ReadLine().ToLower();
 
-
-
-
-
+if (answer3 == "c")
+{
+    points ++;
+    Console.WriteLine("Correct!");
+}
+else
+{
+    Console.WriteLine("Wrong, wrong and wrong..!");
+}
+//------------------------------------------------------//
+Console.WriteLine("Points: " + points);
 
 //------------------------------------------------------//
 Console.ReadLine();
